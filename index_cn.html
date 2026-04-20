@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <link rel="shortcut icon" href="https://modernworkoffice.com/favicon.ico" />
+  <link rel="icon" href="https://modernworkoffice.com/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Modernwork | 韩国共享办公室·虚拟地址登记 | 水枝区厅站步行3分钟" />
+  <meta property="og:description" content="水枝区厅站步行3分钟。提供韩国法人注册地址、虚拟办公室、共享工位服务。适合自由职业者、独立创业者及在韩外籍人士。" />
+  <meta property="og:url" content="https://modernworkoffice.com/cn" />
+  <meta property="og:site_name" content="Modernwork 모던워크" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modernwork | 韩国共享办公室·虚拟地址登记 | 水枝区厅站</title>
+  <meta name="description" content="水枝区厅站步行3分钟。提供韩国法人注册地址、虚拟办公室、共享工位服务。适合自由职业者、独立创业者及在韩外籍人士。" />
+  <meta name="keywords" content="韩国虚拟办公室, 韩国公司注册地址, 水枝共享办公室, 龙仁办公室, 韩国法人地址, Modernwork" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --oak: #C8A97E;
+      --oak-light: #E8D9C4;
+      --oak-pale: #F5EFE6;
+      --charcoal: #2A2A2A;
+      --mid: #6B6560;
+      --light: #F9F6F2;
+      --white: #FFFFFF;
+      --teal: #5B9EA0;
+      --teal-dark: #3D7A7C;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans SC', sans-serif; background: var(--white); color: var(--charcoal); overflow-x: hidden; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px;
+      background: rgba(255,255,255,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(200,169,126,0.2); transition: padding .3s;
+    }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.08em; color: var(--charcoal); text-decoration: none; text-transform: uppercase; }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { font-size: 13px; font-weight: 400; letter-spacing: 0.04em; color: var(--mid); text-decoration: none; transition: color .2s; }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-lang { display: flex; gap: 4px; align-items: center; }
+    .nav-lang a { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; color: var(--mid); text-decoration: none; text-transform: uppercase; padding: 5px 10px; border: 1px solid var(--oak-light); transition: all .2s; font-family: 'Montserrat', sans-serif; }
+    .nav-lang a:hover, .nav-lang a.active { color: var(--teal); border-color: var(--teal); }
+    .nav-cta { background: var(--teal); color: var(--white); border: none; padding: 10px 24px; font-family: 'Noto Sans SC', sans-serif; font-size: 13px; letter-spacing: 0.04em; cursor: pointer; transition: background .2s; text-decoration: none; margin-left: 16px; }
+    .nav-cta:hover { background: var(--teal-dark); }
+
+    #hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; }
+    .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 80px 64px 80px 80px; background: var(--light); position: relative; overflow: hidden; }
+    .hero-left::before { content: ''; position: absolute; bottom: -60px; left: -60px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(200,169,126,0.15) 0%, transparent 70%); }
+    .hero-eyebrow { font-size: 12px; letter-spacing: 0.1em; color: var(--teal); font-weight: 500; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+    .hero-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--teal); }
+    .hero-title { font-family: 'DM Serif Display', serif; font-size: clamp(42px, 5vw, 64px); line-height: 1.15; color: var(--charcoal); margin-bottom: 12px; }
+    .hero-title-2 { font-family: 'Noto Serif SC', serif; font-size: clamp(28px, 3.5vw, 46px); font-weight: 300; color: var(--charcoal); line-height: 1.3; margin-bottom: 28px; }
+    .hero-sub { font-size: 15px; line-height: 1.9; color: var(--mid); font-weight: 300; margin-bottom: 40px; max-width: 420px; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; position: relative; z-index: 2; }
+    .btn-primary { background: var(--teal); color: var(--white); padding: 14px 32px; font-size: 14px; border: none; cursor: pointer; font-family: 'Noto Sans SC', sans-serif; letter-spacing: 0.04em; transition: background .2s, transform .2s; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: var(--charcoal); padding: 14px 32px; font-size: 14px; border: 1.5px solid var(--oak); cursor: pointer; font-family: 'Noto Sans SC', sans-serif; letter-spacing: 0.04em; transition: all .2s; text-decoration: none; display: inline-block; }
+    .btn-outline:hover { background: var(--oak-pale); }
+    .hero-right { position: relative; background: var(--oak-light); overflow: hidden; }
+    .hero-badge { position: absolute; bottom: 40px; left: 40px; background: var(--white); padding: 20px 24px; box-shadow: 0 8px 40px rgba(0,0,0,0.12); z-index: 1; }
+    .hero-badge-num { font-family: 'DM Serif Display', serif; font-size: 36px; color: var(--teal); line-height: 1; }
+    .hero-badge-txt { font-size: 11px; color: var(--mid); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 4px; font-family: 'Montserrat', sans-serif; }
+
+    #features { padding: 100px 80px; background: var(--white); }
+    .section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); font-weight: 500; display: flex; align-items: center; gap: 10px; margin-bottom: 16px; font-family: 'Montserrat', sans-serif; }
+    .section-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--teal); }
+    .section-title { font-family: 'Noto Serif SC', serif; font-size: clamp(26px, 3.2vw, 40px); font-weight: 300; line-height: 1.4; color: var(--charcoal); margin-bottom: 60px; }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--oak-light); }
+    .feature-item { background: var(--white); padding: 48px 36px; transition: background .3s; position: relative; overflow: hidden; }
+    .feature-item::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--teal); transition: width .4s; }
+    .feature-item:hover { background: var(--light); }
+    .feature-item:hover::after { width: 100%; }
+    .feature-num { font-family: 'DM Serif Display', serif; font-size: 48px; color: var(--oak-light); line-height: 1; margin-bottom: 20px; }
+    .feature-name { font-size: 15px; font-weight: 500; color: var(--charcoal); line-height: 1.5; }
+    .feature-desc { font-size: 13px; color: var(--mid); margin-top: 8px; line-height: 1.8; font-weight: 300; }
+
+    #virtual { padding: 80px 80px; background: var(--charcoal); position: relative; overflow: hidden; }
+    #virtual::before { content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(91,158,160,0.1) 0%, transparent 70%); }
+    .virtual-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .virtual-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; font-family: 'Montserrat', sans-serif; }
+    .virtual-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--teal); }
+    .virtual-title { font-family: 'Noto Serif SC', serif; font-size: clamp(22px, 2.8vw, 36px); font-weight: 400; color: var(--white); line-height: 1.5; margin-bottom: 20px; }
+    .virtual-sub { font-size: 14px; line-height: 2; color: rgba(255,255,255,0.55); font-weight: 300; margin-bottom: 32px; }
+    .virtual-items { display: flex; flex-direction: column; gap: 14px; }
+    .virtual-item { display: flex; gap: 14px; align-items: flex-start; }
+    .virtual-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); flex-shrink: 0; margin-top: 8px; }
+    .virtual-item-text { font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.7; }
+    .virtual-right { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .virtual-stat { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 32px 28px; }
+    .virtual-stat-num { font-family: 'DM Serif Display', serif; font-size: 42px; color: var(--teal); line-height: 1; margin-bottom: 8px; }
+    .virtual-stat-num span { font-size: 20px; color: var(--oak); }
+    .virtual-stat-label { font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 0.04em; }
+
+    #space { padding: 100px 80px; background: var(--white); }
+
+    #location { padding: 100px 80px; background: var(--light); }
+    .location-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; align-items: start; }
+    .map-container { background: var(--oak-light); height: 380px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .map-open-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--teal); color: var(--white); padding: 12px 24px; font-size: 13px; letter-spacing: 0.03em; text-decoration: none; margin-top: 12px; transition: background .2s; font-family: 'Noto Sans SC', sans-serif; }
+    .map-open-btn:hover { background: var(--teal-dark); }
+    .location-info { display: flex; flex-direction: column; gap: 28px; }
+    .location-row { display: flex; gap: 16px; align-items: flex-start; }
+    .location-icon { width: 40px; height: 40px; flex-shrink: 0; border: 1.5px solid var(--oak); display: flex; align-items: center; justify-content: center; font-size: 16px; }
+    .location-row-title { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); margin-bottom: 4px; font-weight: 500; font-family: 'Montserrat', sans-serif; }
+    .location-row-text { font-size: 14px; line-height: 1.8; color: var(--charcoal); font-weight: 300; }
+    .hours-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    .hours-table td { padding: 6px 0; font-size: 13px; color: var(--mid); font-weight: 300; border-bottom: 1px solid var(--oak-pale); }
+    .hours-table td:first-child { color: var(--charcoal); font-weight: 500; width: 60px; }
+
+    #cta { padding: 100px 80px; background: var(--charcoal); text-align: center; position: relative; overflow: hidden; }
+    #cta::before { content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(91,158,160,0.12) 0%, transparent 70%); }
+    .cta-eyebrow { font-size: 12px; letter-spacing: 0.1em; color: var(--teal); margin-bottom: 16px; }
+    .cta-title { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 4vw, 52px); color: var(--white); margin-bottom: 8px; }
+    .cta-title-sub { font-family: 'Noto Serif SC', serif; font-size: clamp(16px, 2vw, 24px); font-weight: 300; color: var(--oak-light); margin-bottom: 24px; }
+    .cta-sub { font-size: 14px; color: rgba(255,255,255,0.45); margin-bottom: 40px; font-weight: 300; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-cta-teal { background: var(--teal); color: var(--white); padding: 16px 40px; font-size: 14px; letter-spacing: 0.04em; text-decoration: none; font-family: 'Noto Sans SC', sans-serif; transition: background .2s, transform .2s; display: inline-block; }
+    .btn-cta-teal:hover { background: var(--teal-dark); transform: translateY(-2px); }
+    .btn-cta-ghost { background: transparent; color: var(--white); padding: 16px 40px; font-size: 14px; letter-spacing: 0.04em; border: 1.5px solid rgba(255,255,255,0.3); text-decoration: none; font-family: 'Noto Sans SC', sans-serif; transition: border-color .2s, background .2s; display: inline-block; }
+    .btn-cta-ghost:hover { border-color: var(--oak); background: rgba(200,169,126,0.1); }
+
+    .sns-bar { background: var(--charcoal); border-top: 1px solid rgba(255,255,255,0.08); padding: 28px 80px; display: flex; align-items: center; justify-content: space-between; }
+    .sns-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.3); font-family: 'Montserrat', sans-serif; }
+    .sns-links { display: flex; gap: 20px; }
+    .sns-link { font-size: 12px; letter-spacing: 0.06em; color: rgba(255,255,255,0.5); text-decoration: none; padding: 8px 16px; border: 1px solid rgba(255,255,255,0.12); transition: all .2s; font-family: 'Noto Sans SC', sans-serif; }
+    .sns-link:hover { color: var(--white); border-color: var(--teal); background: rgba(91,158,160,0.1); }
+
+    footer { background: #1A1A1A; padding: 40px 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .footer-brand { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 18px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.08em; }
+    .footer-brand span { color: var(--teal); }
+    .footer-info { font-size: 11px; color: rgba(255,255,255,0.25); line-height: 1.8; }
+
+    /* WeChat floating button */
+    .wechat-float {
+      position: fixed; bottom: 32px; right: 32px; z-index: 200;
+      background: #07C160; color: var(--white);
+      width: 56px; height: 56px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px; box-shadow: 0 4px 20px rgba(7,193,96,0.4);
+      text-decoration: none; transition: transform .2s, box-shadow .2s;
+    }
+    .wechat-float:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(7,193,96,0.5); }
+    .wechat-tooltip {
+      position: fixed; bottom: 98px; right: 28px; z-index: 200;
+      background: var(--charcoal); color: var(--white);
+      font-size: 12px; padding: 8px 14px; white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      opacity: 0; pointer-events: none; transition: opacity .2s;
+    }
+    .wechat-float:hover + .wechat-tooltip,
+    .wechat-float:focus + .wechat-tooltip { opacity: 1; }
+
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 900px) {
+      nav { padding: 16px 24px; }
+      .nav-links { display: none; }
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 60px 24px; }
+      .hero-right { height: 260px; }
+      #features, #virtual, #space, #location, #cta { padding: 60px 24px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .virtual-inner { grid-template-columns: 1fr; gap: 40px; }
+      .virtual-right { grid-template-columns: 1fr 1fr; }
+      .location-layout { grid-template-columns: 1fr; gap: 32px; }
+      .map-container { height: 260px !important; }
+      .sns-bar, footer { padding: 24px 24px; flex-direction: column; gap: 16px; }
+      .cta-btns { flex-direction: column; align-items: center; }
+      .wechat-float { bottom: 20px; right: 20px; }
+    }
+    @media (max-width: 480px) {
+      .hero-title { font-size: 36px !important; }
+      .hero-title-2 { font-size: 26px !important; }
+      .section-title { font-size: 22px !important; }
+      .nav-logo { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Modern<span>work</span></a>
+  <ul class="nav-links">
+    <li><a href="#virtual">虚拟办公室</a></li>
+    <li><a href="#space">空间介绍</a></li>
+    <li><a href="#location">交通指南</a></li>
+  </ul>
+  <div style="display:flex; align-items:center; gap:8px;">
+    <div class="nav-lang">
+      <a href="index.html">KO</a>
+      <a href="index_en.html">EN</a>
+      <a href="index_cn.html" class="active">CN</a>
+    </div>
+    <a href="https://talk.naver.com/profile/wgze8ia" target="_blank" class="nav-cta">立即咨询</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">水枝区厅站步行 3 分钟</div>
+    <div class="hero-title">Modern Space,</div>
+    <div class="hero-title-2">高效办公，从这里开始。</div>
+    <p class="hero-sub">
+      为自由职业者、独立创业者及在韩外籍人士打造的<br>
+      精品共享办公室 — 提供韩国法人注册地址服务。
+    </p>
+    <div class="hero-btns">
+      <a href="https://talk.naver.com/profile/wgze8ia" target="_blank" class="btn-primary">立即咨询</a>
+      <a href="#virtual" class="btn-outline">了解虚拟办公室</a>
+    </div>
+  </div>
+  <div class="hero-right" style="background:#D4C4B0;">
+    <img style="width:100%;height:100%;object-fit:cover;display:block;" src="https://modernworkoffice.com/images/PTOI0975.jpg" alt="Modernwork 办公室入口" />
+    <div class="hero-badge">
+      <div class="hero-badge-num">200<span style="font-size:20px">m²</span></div>
+      <div class="hero-badge-txt">Premium Workspace</div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="section-label fade-up">Why Modernwork</div>
+  <div class="section-title fade-up">选择 Modernwork 的六大理由</div>
+  <div class="features-grid">
+    <div class="feature-item fade-up">
+      <div class="feature-num">01</div>
+      <div class="feature-name">优越地段</div>
+      <div class="feature-desc">新盆唐线水枝区厅站步行仅需 3 分钟</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">02</div>
+      <div class="feature-name">三重隔音设施</div>
+      <div class="feature-desc">三层隔音墙体，保障通话与会议的完全私密性</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">03</div>
+      <div class="feature-name">独立空调系统</div>
+      <div class="feature-desc">每间独立办公室配备单独冷暖空调，随时调节</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">04</div>
+      <div class="feature-name">精品咖啡 · 轻食</div>
+      <div class="feature-desc">免费提供精选咖啡豆与轻食，全天候补充能量</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">05</div>
+      <div class="feature-name">采光充足的休息区</div>
+      <div class="feature-desc">宽敞明亮的公共休息空间，适合休息或非正式交流</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">06</div>
+      <div class="feature-name">优质家具配置</div>
+      <div class="feature-desc">配备 Dasker 品牌桌与 Fursys 人体工学椅</div>
+    </div>
+  </div>
+</section>
+
+<section id="virtual">
+  <div class="virtual-inner">
+    <div class="virtual-left fade-up">
+      <div class="virtual-label">Virtual Office · 虚拟办公室</div>
+      <div class="virtual-title">韩国法人注册地址，<br>无需承担高额办公室租金。</div>
+      <p class="virtual-sub">
+        使用水枝区的优质地址完成韩国法人注册。适合在韩外籍人士、海外创业者，以及需要正规韩国商业地址但无需实体办公室的人士。
+      </p>
+      <div class="virtual-items">
+        <div class="virtual-item">
+          <div class="virtual-dot"></div>
+          <div class="virtual-item-text">提供龙仁市水枝区正规法人注册地址</div>
+        </div>
+        <div class="virtual-item">
+          <div class="virtual-dot"></div>
+          <div class="virtual-item-text">代收邮件及官方文件（可扫描发送）</div>
+        </div>
+        <div class="virtual-item">
+          <div class="virtual-dot"></div>
+          <div class="virtual-item-text">按月计费，无需签订长期合同</div>
+        </div>
+        <div class="virtual-item">
+          <div class="virtual-dot"></div>
+          <div class="virtual-item-text">通过 Naver Talk 咨询，当日快速响应</div>
+        </div>
+      </div>
+      <div style="margin-top:36px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="https://talk.naver.com/profile/wgze8ia" target="_blank" class="btn-primary">立即咨询</a>
+      </div>
+    </div>
+    <div class="virtual-right fade-up">
+      <div class="virtual-stat">
+        <div class="virtual-stat-num">24<span>/7</span></div>
+        <div class="virtual-stat-label">全天候进出</div>
+      </div>
+      <div class="virtual-stat">
+        <div class="virtual-stat-num">200<span>m²</span></div>
+        <div class="virtual-stat-label">总使用面积</div>
+      </div>
+      <div class="virtual-stat" style="grid-column:span 2; background:rgba(91,158,160,0.08); border-color:rgba(91,158,160,0.2);">
+        <div style="font-size:13px; color:rgba(255,255,255,0.55); line-height:2; font-weight:300;">
+          以极低成本获得水枝区的优质商业地址 — 非常适合正在建立韩国业务的初创公司和独立创业者。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="space" style="padding:100px 80px; background:var(--white);">
+  <div class="section-label fade-up">Our Space</div>
+  <div class="section-title fade-up">专注高效的工作空间</div>
+  <div class="fade-up" style="display:grid; grid-template-columns:1.6fr 1fr; grid-template-rows:380px; gap:8px; margin-bottom:8px;">
+    <div style="overflow:hidden; border-radius:4px;">
+      <img src="https://modernworkoffice.com/images/PTOI0975.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork 主空间" />
+    </div>
+    <div style="display:grid; grid-template-rows:1fr 1fr; gap:8px;">
+      <div style="overflow:hidden; border-radius:4px;">
+        <img src="https://modernworkoffice.com/images/PTOI0719.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork 休息区" />
+      </div>
+      <div style="overflow:hidden; border-radius:4px;">
+        <img src="https://modernworkoffice.com/images/PTOI0762.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork 会议室" />
+      </div>
+    </div>
+  </div>
+  <div class="fade-up" style="display:grid; grid-template-columns:1fr 1.3fr; grid-template-rows:300px; gap:8px;">
+    <div style="overflow:hidden; border-radius:4px;">
+      <img src="https://modernworkoffice.com/images/PTOI0813.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork 独立办公室" />
+    </div>
+    <div style="overflow:hidden; border-radius:4px;">
+      <img src="https://modernworkoffice.com/images/PTOI0879.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork 走廊" />
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="section-label fade-up">Location</div>
+  <div class="section-title fade-up">交通指南</div>
+  <div class="location-layout">
+    <div class="fade-up">
+      <div class="map-container" style="padding:0; overflow:hidden; background:var(--oak-pale); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px;">
+        <div style="font-size:48px;">📍</div>
+        <div style="font-family:'Noto Sans SC',sans-serif; font-weight:600; font-size:16px; color:var(--charcoal);">Modernwork 共享办公室</div>
+        <div style="font-size:13px; color:var(--mid); text-align:center; line-height:1.9;">
+          韩国京畿道龙仁市水枝区<br>
+          水枝路342番街 30号 Hyundai Plaza 5楼
+        </div>
+        <a href="https://naver.me/5CCEP0mX" target="_blank" class="map-open-btn">🗺 在 Naver 地图中查看 →</a>
+      </div>
+    </div>
+    <div class="location-info fade-up">
+      <div class="location-row">
+        <div class="location-icon">🚇</div>
+        <div class="location-row-content">
+          <div class="location-row-title">地铁</div>
+          <div class="location-row-text">新盆唐线 — <strong>水枝区厅站</strong><br>4号出口，步行约 3 分钟</div>
+        </div>
+      </div>
+      <div class="location-row">
+        <div class="location-icon">🕐</div>
+        <div class="location-row-content">
+          <div class="location-row-title">营业时间</div>
+          <table class="hours-table">
+            <tr><td>全年无休</td><td>24小时开放</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="location-row">
+        <div class="location-icon">💬</div>
+        <div class="location-row-content">
+          <div class="location-row-title">联系方式</div>
+          <div class="location-row-text">
+            031-896-8372<br>
+            <a href="https://talk.naver.com/profile/wgze8ia" target="_blank" style="color:var(--teal); font-size:13px;">Naver Talk 在线咨询 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-eyebrow fade-up">现在就开始</div>
+  <div class="cta-title fade-up">Your Space Awaits.</div>
+  <div class="cta-title-sub fade-up">水枝区最具品质感的商务办公空间</div>
+  <p class="cta-sub fade-up">预约参观后，我们将为您详细介绍全部服务内容。</p>
+  <div class="cta-btns fade-up">
+    <a href="https://map.naver.com/p/entry/place/2058318812?c=20.00,0,0,0,dh&placePath=/ticket?bookmarkId=4310756522&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202604190614&locale=ko&svcName=map_pcv5&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202604080117&locale=ko&svcName=map_pcv5" target="_blank" class="btn-cta-teal">Naver 预约参观</a>
+    <a href="https://talk.naver.com/profile/wgze8ia" target="_blank" class="btn-cta-ghost">在线咨询</a>
+  </div>
+</section>
+
+<div class="sns-bar">
+  <span class="sns-label">Follow Us</span>
+  <div class="sns-links">
+    <a href="https://blog.naver.com/modernwork_" target="_blank" class="sns-link">Naver 博客</a>
+    <a href="https://www.instagram.com/modernwork_office" target="_blank" class="sns-link">Instagram</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">Modern<span>work</span></div>
+  <div class="footer-info">
+    Modernwork 共享办公室 &nbsp;·&nbsp; 水枝区厅站店<br>
+    京畿道龙仁市水枝区水枝路342番街 30号 5楼<br>
+    电话：031-896-8372
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 80);
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

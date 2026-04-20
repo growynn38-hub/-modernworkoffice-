@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="https://modernworkoffice.com/favicon.ico" />
+  <link rel="icon" href="https://modernworkoffice.com/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Modernwork | Shared Office & Virtual Office in Suji, Yongin" />
+  <meta property="og:description" content="3-min walk from Suji-gu Office Station. Soho office, virtual office address, and co-working space for freelancers, solo entrepreneurs, and remote workers." />
+  <meta property="og:url" content="https://modernworkoffice.com/en" />
+  <meta property="og:site_name" content="Modernwork" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modernwork | Shared Office & Virtual Office in Suji, Yongin</title>
+  <meta name="description" content="3-min walk from Suji-gu Office Station. Soho office, virtual office address, and co-working space for freelancers, solo entrepreneurs, and remote workers." />
+  <meta name="keywords" content="Suji shared office, Yongin co-working space, virtual office Korea, Suji-gu Office Station office, Modernwork" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --oak: #C8A97E;
+      --oak-light: #E8D9C4;
+      --oak-pale: #F5EFE6;
+      --charcoal: #2A2A2A;
+      --mid: #6B6560;
+      --light: #F9F6F2;
+      --white: #FFFFFF;
+      --teal: #5B9EA0;
+      --teal-dark: #3D7A7C;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', sans-serif; background: var(--white); color: var(--charcoal); overflow-x: hidden; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px;
+      background: rgba(255,255,255,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(200,169,126,0.2); transition: padding .3s;
+    }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.08em; color: var(--charcoal); text-decoration: none; text-transform: uppercase; }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { font-size: 12px; font-weight: 500; letter-spacing: 0.1em; color: var(--mid); text-decoration: none; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-lang { display: flex; gap: 4px; align-items: center; }
+    .nav-lang a { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; color: var(--mid); text-decoration: none; text-transform: uppercase; padding: 5px 10px; border: 1px solid var(--oak-light); transition: all .2s; }
+    .nav-lang a:hover, .nav-lang a.active { color: var(--teal); border-color: var(--teal); }
+    .nav-cta { background: var(--teal); color: var(--white); border: none; padding: 10px 24px; font-family: 'Montserrat', sans-serif; font-size: 12px; letter-spacing: 0.08em; font-weight: 500; cursor: pointer; transition: background .2s; text-decoration: none; margin-left: 16px; }
+    .nav-cta:hover { background: var(--teal-dark); }
+
+    #hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; }
+    .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 80px 64px 80px 80px; background: var(--light); position: relative; overflow: hidden; }
+    .hero-left::before { content: ''; position: absolute; bottom: -60px; left: -60px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(200,169,126,0.15) 0%, transparent 70%); }
+    .hero-eyebrow { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); font-weight: 500; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+    .hero-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--teal); }
+    .hero-title { font-family: 'DM Serif Display', serif; font-size: clamp(42px, 5vw, 64px); line-height: 1.15; color: var(--charcoal); margin-bottom: 12px; }
+    .hero-title-2 { font-family: 'DM Serif Display', serif; font-size: clamp(42px, 5vw, 64px); font-weight: 400; color: var(--charcoal); line-height: 1.15; margin-bottom: 28px; }
+    .hero-sub { font-size: 15px; line-height: 1.8; color: var(--mid); font-weight: 300; margin-bottom: 40px; max-width: 400px; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; position: relative; z-index: 2; }
+    .btn-primary { background: var(--teal); color: var(--white); padding: 14px 32px; font-size: 13px; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; font-weight: 500; letter-spacing: 0.06em; transition: background .2s, transform .2s; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: var(--charcoal); padding: 14px 32px; font-size: 13px; border: 1.5px solid var(--oak); cursor: pointer; font-family: 'Montserrat', sans-serif; font-weight: 500; letter-spacing: 0.06em; transition: all .2s; text-decoration: none; display: inline-block; }
+    .btn-outline:hover { background: var(--oak-pale); }
+    .hero-right { position: relative; background: var(--oak-light); overflow: hidden; }
+    .hero-badge { position: absolute; bottom: 40px; left: 40px; background: var(--white); padding: 20px 24px; box-shadow: 0 8px 40px rgba(0,0,0,0.12); z-index: 1; }
+    .hero-badge-num { font-family: 'DM Serif Display', serif; font-size: 36px; color: var(--teal); line-height: 1; }
+    .hero-badge-txt { font-size: 11px; color: var(--mid); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
+
+    #features { padding: 100px 80px; background: var(--white); }
+    .section-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); font-weight: 500; display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+    .section-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--teal); }
+    .section-title { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3.5vw, 42px); font-weight: 400; line-height: 1.4; color: var(--charcoal); margin-bottom: 60px; }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--oak-light); }
+    .feature-item { background: var(--white); padding: 48px 36px; transition: background .3s; position: relative; overflow: hidden; }
+    .feature-item::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--teal); transition: width .4s; }
+    .feature-item:hover { background: var(--light); }
+    .feature-item:hover::after { width: 100%; }
+    .feature-num { font-family: 'DM Serif Display', serif; font-size: 48px; color: var(--oak-light); line-height: 1; margin-bottom: 20px; }
+    .feature-name { font-size: 15px; font-weight: 600; color: var(--charcoal); letter-spacing: 0.02em; line-height: 1.5; }
+    .feature-desc { font-size: 13px; color: var(--mid); margin-top: 8px; line-height: 1.7; font-weight: 300; }
+
+    #virtual { padding: 80px 80px; background: var(--charcoal); position: relative; overflow: hidden; }
+    #virtual::before { content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(91,158,160,0.1) 0%, transparent 70%); }
+    .virtual-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .virtual-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+    .virtual-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--teal); }
+    .virtual-title { font-family: 'DM Serif Display', serif; font-size: clamp(26px, 3vw, 38px); color: var(--white); line-height: 1.35; margin-bottom: 20px; }
+    .virtual-sub { font-size: 14px; line-height: 1.9; color: rgba(255,255,255,0.55); font-weight: 300; margin-bottom: 32px; }
+    .virtual-items { display: flex; flex-direction: column; gap: 14px; }
+    .virtual-item { display: flex; gap: 14px; align-items: flex-start; }
+    .virtual-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); flex-shrink: 0; margin-top: 7px; }
+    .virtual-item-text { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.6; }
+    .virtual-right { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .virtual-stat { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 32px 28px; }
+    .virtual-stat-num { font-family: 'DM Serif Display', serif; font-size: 42px; color: var(--teal); line-height: 1; margin-bottom: 8px; }
+    .virtual-stat-num span { font-size: 20px; color: var(--oak); }
+    .virtual-stat-label { font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 0.1em; text-transform: uppercase; }
+
+    #space { padding: 100px 80px; background: var(--white); }
+
+    #location { padding: 100px 80px; background: var(--light); }
+    .location-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; align-items: start; }
+    .map-container { background: var(--oak-light); height: 380px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .map-open-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--teal); color: var(--white); padding: 12px 24px; font-size: 12px; letter-spacing: 0.06em; text-decoration: none; margin-top: 12px; transition: background .2s; font-family: 'Montserrat', sans-serif; font-weight: 500; }
+    .map-open-btn:hover { background: var(--teal-dark); }
+    .location-info { display: flex; flex-direction: column; gap: 28px; }
+    .location-row { display: flex; gap: 16px; align-items: flex-start; }
+    .location-icon { width: 40px; height: 40px; flex-shrink: 0; border: 1.5px solid var(--oak); display: flex; align-items: center; justify-content: center; font-size: 16px; }
+    .location-row-title { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal); margin-bottom: 4px; font-weight: 600; }
+    .location-row-text { font-size: 14px; line-height: 1.7; color: var(--charcoal); font-weight: 300; }
+    .hours-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    .hours-table td { padding: 6px 0; font-size: 13px; color: var(--mid); font-weight: 300; border-bottom: 1px solid var(--oak-pale); }
+    .hours-table td:first-child { color: var(--charcoal); font-weight: 500; width: 80px; }
+
+    #cta { padding: 100px 80px; background: var(--charcoal); text-align: center; position: relative; overflow: hidden; }
+    #cta::before { content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(91,158,160,0.12) 0%, transparent 70%); }
+    .cta-eyebrow { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 16px; }
+    .cta-title { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 4vw, 52px); color: var(--white); margin-bottom: 8px; }
+    .cta-title-sub { font-family: 'Montserrat', sans-serif; font-size: clamp(14px, 1.8vw, 18px); font-weight: 300; color: var(--oak-light); margin-bottom: 24px; letter-spacing: 0.05em; }
+    .cta-sub { font-size: 14px; color: rgba(255,255,255,0.45); margin-bottom: 40px; font-weight: 300; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-cta-teal { background: var(--teal); color: var(--white); padding: 16px 40px; font-size: 13px; letter-spacing: 0.08em; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; transition: background .2s, transform .2s; display: inline-block; }
+    .btn-cta-teal:hover { background: var(--teal-dark); transform: translateY(-2px); }
+    .btn-cta-ghost { background: transparent; color: var(--white); padding: 16px 40px; font-size: 13px; letter-spacing: 0.08em; border: 1.5px solid rgba(255,255,255,0.3); text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; transition: border-color .2s, background .2s; display: inline-block; }
+    .btn-cta-ghost:hover { border-color: var(--oak); background: rgba(200,169,126,0.1); }
+
+    .sns-bar { background: var(--charcoal); border-top: 1px solid rgba(255,255,255,0.08); padding: 28px 80px; display: flex; align-items: center; justify-content: space-between; }
+    .sns-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.3); }
+    .sns-links { display: flex; gap: 20px; }
+    .sns-link { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); text-decoration: none; padding: 8px 16px; border: 1px solid rgba(255,255,255,0.12); transition: all .2s; }
+    .sns-link:hover { color: var(--white); border-color: var(--teal); background: rgba(91,158,160,0.1); }
+
+    footer { background: #1A1A1A; padding: 40px 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .footer-brand { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 18px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.08em; }
+    .footer-brand span { color: var(--teal); }
+    .footer-info { font-size: 11px; color: rgba(255,255,255,0.25); line-height: 1.7; }
+
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 900px) {
+      nav { padding: 16px 24px; }
+      .nav-links { display: none; }
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 60px 24px; }
+      .hero-right { height: 260px; }
+      #features, #virtual, #space, #location, #cta { padding: 60px 24px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .virtual-inner { grid-template-columns: 1fr; gap: 40px; }
+      .virtual-right { grid-template-columns: 1fr 1fr; }
+      .location-layout { grid-template-columns: 1fr; gap: 32px; }
+      .map-container { height: 260px !important; }
+      .sns-bar, footer { padding: 24px 24px; flex-direction: column; gap: 16px; }
+      .cta-btns { flex-direction: column; align-items: center; }
+    }
+    @media (max-width: 480px) {
+      .hero-title, .hero-title-2 { font-size: 36px !important; }
+      .section-title { font-size: 24px !important; }
+      .nav-logo { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Modern<span>work</span></a>
+  <ul class="nav-links">
+    <li><a href="#virtual">Virtual Office</a></li>
+    <li><a href="#space">Our Space</a></li>
+    <li><a href="#location">Location</a></li>
+  </ul>
+  <div style="display:flex; align-items:center; gap:8px;">
+    <div class="nav-lang">
+      <a href="index.html">KO</a>
+      <a href="index_en.html" class="active">EN</a>
+      <a href="index_cn.html">CN</a>
+    </div>
+    <a href="https://naver.me/GlRVNNne" target="_blank" class="nav-cta">Book a Tour</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">3-min walk from Suji-gu Office Station</div>
+    <div class="hero-title">Modern Space,</div>
+    <div class="hero-title-2">Better Work.</div>
+    <p class="hero-sub">
+      A refined workspace for freelancers, solo entrepreneurs,<br>
+      and remote workers — virtual office address available.
+    </p>
+    <div class="hero-btns">
+      <a href="https://naver.me/GlRVNNne" target="_blank" class="btn-primary">Book a Tour</a>
+      <a href="https://talk.naver.com/profile/wgze8ia" target="_blank" class="btn-outline">Contact Us</a>
+    </div>
+  </div>
+  <div class="hero-right" style="background:#D4C4B0;">
+    <img style="width:100%;height:100%;object-fit:cover;display:block;" src="https://modernworkoffice.com/images/PTOI0975.jpg" alt="Modernwork entrance" />
+    <div class="hero-badge">
+      <div class="hero-badge-num">200<span style="font-size:20px">m²</span></div>
+      <div class="hero-badge-txt">Premium Workspace</div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="section-label fade-up">Why Modernwork</div>
+  <div class="section-title fade-up">Six reasons to choose us</div>
+  <div class="features-grid">
+    <div class="feature-item fade-up">
+      <div class="feature-num">01</div>
+      <div class="feature-name">Prime Location</div>
+      <div class="feature-desc">3-minute walk from Suji-gu Office Station (Sinbundang Line)</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">02</div>
+      <div class="feature-name">Triple Sound Insulation</div>
+      <div class="feature-desc">Three-layer acoustic panels for complete privacy and focus</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">03</div>
+      <div class="feature-name">Individual Climate Control</div>
+      <div class="feature-desc">Separate heating and cooling in every private room</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">04</div>
+      <div class="feature-name">Premium Coffee &amp; Snacks</div>
+      <div class="feature-desc">Complimentary specialty coffee and light snacks provided daily</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">05</div>
+      <div class="feature-name">Bright, Airy Lounge</div>
+      <div class="feature-desc">Sun-drenched common area perfect for breaks and casual meetings</div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-num">06</div>
+      <div class="feature-name">Quality Furniture</div>
+      <div class="feature-desc">Sturdy Dasker desks paired with ergonomic Fursys chairs</div>
+    </div>
+  </div>
+</section>
+
+<section id="virtual">
+  <div class="virtual-inner">
+    <div class="virtual-left fade-up">
+      <div class="virtual-label">Virtual Office</div>
+      <div class="virtual-title">A registered Korean business address — without the overhead.</div>
+      <p class="virtual-sub">
+        Register your Korean company with a premium Suji-gu address. Ideal for overseas entrepreneurs, foreign residents, and anyone who needs a credible business presence without committing to a full office lease.
+      </p>
+      <div class="virtual-items">
+        <div class="virtual-item">
+          <div class="virtual-dot"></div>
+          <div class="virtual-item-text">Official business registration address in Suji-gu, Yongin</div>
+        </div>
+        <div class="virtual-item">
+          <div class="virtual-dot"></div>
+          <div class="virtual-item-text">Mail and document receipt on your behalf</div>
+        </div>
+        <div class="virtual-item">
+          <div class="virtual-dot"></div>
+          <div class="virtual-item-text">Flexible monthly terms — no long-term contract required</div>
+        </div>
+        <div class="virtual-item">
+          <div class="virtual-dot"></div>
+          <div class="virtual-item-text">Fast, same-day responses via Naver Talk</div>
+        </div>
+      </div>
+      <div style="margin-top:36px;">
+        <a href="https://talk.naver.com/profile/wgze8ia" target="_blank" class="btn-primary">Inquire Now</a>
+      </div>
+    </div>
+    <div class="virtual-right fade-up">
+      <div class="virtual-stat">
+        <div class="virtual-stat-num">24<span>/7</span></div>
+        <div class="virtual-stat-label">Building Access</div>
+      </div>
+      <div class="virtual-stat">
+        <div class="virtual-stat-num">200<span>m²</span></div>
+        <div class="virtual-stat-label">Total Floor Area</div>
+      </div>
+      <div class="virtual-stat" style="grid-column:span 2; background:rgba(91,158,160,0.08); border-color:rgba(91,158,160,0.2);">
+        <div style="font-size:13px; color:rgba(255,255,255,0.5); line-height:1.85; font-weight:300;">
+          A prestigious Suji-gu address at a fraction of the cost — ideal for startups and solo founders establishing their Korean business presence.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="space" style="padding:100px 80px; background:var(--white);">
+  <div class="section-label fade-up">Our Space</div>
+  <div class="section-title fade-up">Spaces designed for deep focus</div>
+  <div class="fade-up" style="display:grid; grid-template-columns:1.6fr 1fr; grid-template-rows:380px; gap:8px; margin-bottom:8px;">
+    <div style="overflow:hidden; border-radius:4px;">
+      <img src="https://modernworkoffice.com/images/PTOI0975.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork main space" />
+    </div>
+    <div style="display:grid; grid-template-rows:1fr 1fr; gap:8px;">
+      <div style="overflow:hidden; border-radius:4px;">
+        <img src="https://modernworkoffice.com/images/PTOI0719.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork lounge" />
+      </div>
+      <div style="overflow:hidden; border-radius:4px;">
+        <img src="https://modernworkoffice.com/images/PTOI0762.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork meeting room" />
+      </div>
+    </div>
+  </div>
+  <div class="fade-up" style="display:grid; grid-template-columns:1fr 1.3fr; grid-template-rows:300px; gap:8px;">
+    <div style="overflow:hidden; border-radius:4px;">
+      <img src="https://modernworkoffice.com/images/PTOI0813.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork private room" />
+    </div>
+    <div style="overflow:hidden; border-radius:4px;">
+      <img src="https://modernworkoffice.com/images/PTOI0879.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" alt="Modernwork corridor" />
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="section-label fade-up">Location</div>
+  <div class="section-title fade-up">How to find us</div>
+  <div class="location-layout">
+    <div class="fade-up">
+      <div class="map-container" style="padding:0; overflow:hidden; background:var(--oak-pale); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px;">
+        <div style="font-size:48px;">📍</div>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:600; font-size:16px; color:var(--charcoal); text-transform:uppercase; letter-spacing:0.06em;">Modernwork</div>
+        <div style="font-size:13px; color:var(--mid); text-align:center; line-height:1.85;">30, Suji-ro 342beon-gil, Suji-gu<br>Yongin-si, Gyeonggi-do · 5F Hyundai Plaza</div>
+        <a href="https://naver.me/5CCEP0mX" target="_blank" class="map-open-btn">🗺 Open in Naver Maps →</a>
+      </div>
+    </div>
+    <div class="location-info fade-up">
+      <div class="location-row">
+        <div class="location-icon">🚇</div>
+        <div class="location-row-content">
+          <div class="location-row-title">Subway</div>
+          <div class="location-row-text">Sinbundang Line — <strong>Suji-gu Office Station</strong><br>Exit 4 · approx. 3-minute walk</div>
+        </div>
+      </div>
+      <div class="location-row">
+        <div class="location-icon">🕐</div>
+        <div class="location-row-content">
+          <div class="location-row-title">Hours</div>
+          <table class="hours-table">
+            <tr><td>Every day</td><td>Open 24 hours</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="location-row">
+        <div class="location-icon">💬</div>
+        <div class="location-row-content">
+          <div class="location-row-title">Contact</div>
+          <div class="location-row-text">
+            031-896-8372<br>
+            <a href="https://talk.naver.com/profile/wgze8ia" target="_blank" style="color:var(--teal); font-size:13px;">Naver Talk (Online Chat) →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-eyebrow fade-up">Start today</div>
+  <div class="cta-title fade-up">Your Space Awaits.</div>
+  <div class="cta-title-sub fade-up">The most thoughtfully designed workspace in Suji</div>
+  <p class="cta-sub fade-up">Book a tour and we'll walk you through everything in person.</p>
+  <div class="cta-btns fade-up">
+    <a href="https://map.naver.com/p/entry/place/2058318812?c=20.00,0,0,0,dh&placePath=/ticket?bookmarkId=4310756522&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202604190614&locale=ko&svcName=map_pcv5&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202604080117&locale=ko&svcName=map_pcv5" target="_blank" class="btn-cta-teal">Book via Naver</a>
+    <a href="https://talk.naver.com/profile/wgze8ia" target="_blank" class="btn-cta-ghost">Chat with Us</a>
+  </div>
+</section>
+
+<div class="sns-bar">
+  <span class="sns-label">Follow Us</span>
+  <div class="sns-links">
+    <a href="https://blog.naver.com/modernwork_" target="_blank" class="sns-link">Naver Blog</a>
+    <a href="https://www.instagram.com/modernwork_office" target="_blank" class="sns-link">Instagram</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">Modern<span>work</span></div>
+  <div class="footer-info">
+    Modernwork Shared Office &nbsp;·&nbsp; Suji-gu Office Station Branch<br>
+    30, Suji-ro 342beon-gil, Suji-gu, Yongin-si, Gyeonggi-do · 5F<br>
+    Tel: 031-896-8372
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 80);
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
